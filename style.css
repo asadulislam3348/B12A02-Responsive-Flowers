@@ -29,7 +29,26 @@ body {
   font-weight: 400;
 }
 
-/* Responsive: iPhone 14/15 */
+/* banner style */
+.banner {
+  display: flex;
+  margin-top: 100px;
+}
+.banner-header {
+  font-size: 50px;
+  font-weight: 700;
+}
+.banner-header span {
+  color: rgb(233, 90, 8);
+}
+
+.banner-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* Navbar-Responsive: iPhone 14/15 */
 
 @media screen and (max-width: 431px) {
   .nav-lists li:nth-child(1),
@@ -37,10 +56,10 @@ body {
   .nav-lists li:nth-child(3) {
     display: none;
   }
-  .nav-lists{
-        justify-content: flex-end;
-        gap: 100px;
-    } 
+  .nav-lists {
+    justify-content: flex-end;
+    gap: 100px;
+  }
 
   .navbar {
     display: flex;
@@ -52,12 +71,36 @@ body {
     width: 63px;
     height: 38px;
   }
-  .nav-1{
-
-width: 79px;
-height: 24px;
-justify-content: flex-start;
-align-items: center;
-gap: 10;
+  .nav-1 {
+    width: 79px;
+    height: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
 }
+
+/*Banner-Responsive: iPhone 14/15 */
+@media screen and (max-width: 431px) {
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 16px;
+  }
+  .banner img {
+    width: 100%;
+    max-width: 393px;
+    height: auto;
+  }
+
+  .banner-header{
+    font-size:32px;
+font-weight: 700;
+  }
+  .banner-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
