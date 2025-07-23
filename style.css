@@ -1,0 +1,63 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1180px;
+}
+/* nav style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-lists {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+.nav-lists a {
+  text-decoration: none;
+  color: rgb(113, 95, 70);
+}
+.nav-lists .nav-1 {
+  color: black;
+  font-weight: 700;
+}
+.nav-lists .nav-2 {
+  /* Text/Medium/Regular */
+  color: rgb(137, 135, 161);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Responsive: iPhone 14/15 */
+
+@media screen and (max-width: 431px) {
+  .nav-lists li:nth-child(1),
+  .nav-lists li:nth-child(2),
+  .nav-lists li:nth-child(3) {
+    display: none;
+  }
+  .nav-lists{
+        justify-content: flex-end;
+        gap: 100px;
+    } 
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+  }
+  .logo img {
+    width: 63px;
+    height: 38px;
+  }
+  .nav-1{
+
+width: 79px;
+height: 24px;
+justify-content: flex-start;
+align-items: center;
+gap: 10;
+}
+}
