@@ -146,6 +146,93 @@ body {
   font-weight: 400;
   text-align: center;
 }
+/* Join Section img left-1 */
+.Section-img{
+  display: flex;
+  gap: 20px;
+}
+
+.deal-img-left-1{
+  background-image: url(./assets/deal-bloom.png);
+  width: 366.22px;
+height: 206px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.4),url(image);
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+.deal-img-left-1 h2{
+ color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 700;
+text-align: center; 
+}
+.deal-img-left-1 p{
+  color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 600;
+text-align:center;
+text-decoration-line: underline;
+}
+/* Join Section img left-2 */
+.deal-img-left-2{
+  background-image: url(./assets/deal-ana.png);
+  width: 366.22px;
+height: 206px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.4),url(image);
+border-radius: 10px;
+}
+
+.deal-img-left-2 h2{
+ color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 700;
+text-align: center; 
+}
+.deal-img-left-2 p{
+  color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 600;
+text-align:center;
+text-decoration-line: underline;
+}
+
+/* Join Section right-1-img */
+
+.right-1-img{
+  background-image: url(./assets/deal-zabo.png);
+  width: 753px;
+height: 423.13px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.4),url(image);
+border-radius: 10px;
+}
+
+.right-1-img h2{
+ color: rgb(255, 255, 255);
+font-size: 50px;
+font-weight: 700;
+text-align: center; 
+}
+.right-1-img p{
+  color: rgb(255, 255, 255);
+font-size: 30px;
+font-weight: 600;
+text-align:center;
+text-decoration-line: underline;
+}
+
 
 /* Navbar-Responsive: iPhone 14/15 */
 
@@ -301,4 +388,41 @@ body {
   text-align: center;
   padding-left: 8px;
 }
+}
+
+/* Join Section img */
+@media screen and (max-width: 431px){
+.Section-img{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+}
+.right-1-img{
+  background-image: url(./assets/deal-zabo.png);
+  width: 366.22px;
+height: 206px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: rgba(0, 0, 0, 0.4),url(image);
+border-radius: 10px;
+}
+
+.right-1-img h2{
+ color: rgb(255, 255, 255);
+font-size: 25px;
+font-weight: 700;
+text-align: center; 
+}
+.right-1-img p{
+  color: rgb(255, 255, 255);
+font-size: 15px;
+font-weight: 600;
+text-align:center;
+text-decoration-line: underline;
+}
+
+
 }
