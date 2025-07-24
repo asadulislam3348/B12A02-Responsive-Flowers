@@ -269,6 +269,59 @@ body {
   width: 150px;
 }
 
+/* footer  */
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 160px;
+  align-items: flex-start;
+  /* background-color: aquamarine; */
+  gap: 40px;
+}
+.logo {
+  width: 135px;
+  height: 82px;
+  margin: 0px;
+}
+
+.logo p {
+  flex: 1;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.logo img {
+  width: 135px;
+  height: 82px;
+}
+.lists {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+.lists li {
+  list-style: none;
+}
+.lists ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 80px;
+}
+.lists a {
+  text-decoration: none;
+  color: rgb(113, 95, 70);
+}
+.icons {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
 /* Navbar-Responsive: iPhone 14/15 */
 
 @media screen and (max-width: 431px) {
@@ -471,3 +524,41 @@ body {
     width: 50%;
   }
 }
+
+/* footer-responsive */
+@media screen and (max-width: 431px) {
+  footer {
+  display: flex;
+  flex-direction:column;
+  padding: 20px;
+  gap: 30px;
+  margin: 50px 20px;
+  }
+  .logo {
+    font-size: 22px;
+    font-weight: 400;
+    text-align:left;
+    width: 180px;
+    height: 109px;
+    margin: 16px 0px;
+  }
+  .logo p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  text-align:left;
+}
+.lists ul{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+ 
+}
+.icons {
+  display: flex;
+justify-content:left;
+align-items:l;
+text-align:left;
+  gap: 15px;
+}
+} 
