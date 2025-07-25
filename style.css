@@ -34,6 +34,10 @@ body {
   display: flex;
   margin-top: 100px;
 }
+.banner-img {
+  background-size: cover;
+  position: relative;
+}
 .banner-header {
   font-size: 50px;
   font-weight: 700;
@@ -70,11 +74,14 @@ body {
   display: grid;
 
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
 }
 
 .card {
   width: 100%;
-  max-width: 270px;
+  /* max-width: 270px; */
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
@@ -101,10 +108,29 @@ body {
 /* Plants-Lover-Section */
 .Plants-Lover-Section {
   display: flex;
+  align-items: center;
   gap: 100px;
   margin-top: 150px;
 }
+
+.trusted-badge {
+  position: absolute;
+  top: -110px;
+  left: 350px;
+  width: 280px;
+  z-index: 5;
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .Plants-Lover-img {
+  position: relative;
   width: 540px;
   height: 597px;
   margin: 0px 10px;
@@ -317,7 +343,7 @@ footer {
 .icons {
   display: flex;
   flex: 1;
-  gap: 10px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
@@ -331,7 +357,8 @@ footer {
     display: none;
   }
   .nav-lists {
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
   }
 
@@ -398,21 +425,24 @@ footer {
 @media screen and (max-width: 431px) {
   .card-container {
     display: grid;
-    gap: 12px;
+    /* display: block; */
+    gap: 5px;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 16px;
+    padding: 5px;
+    margin-right: 10px;
   }
 
   .card {
     width: 100%;
+    /* display: block; */
     /* max-width: 270px; */
     text-align: center;
+    box-sizing: border-box;
     margin-right: 10px;
-    margin-bottom: 20px;
-    flex: 1;
+    /* flex: 1; */
   }
   .card-container button {
-    width: 100%;
+    width: 90%;
     height: 50px;
   }
 }
@@ -455,6 +485,9 @@ footer {
     font-weight: 400;
     margin-top: 16px;
     text-align: left;
+  }
+  .trusted-badge {
+    display: none;
   }
 }
 
@@ -528,37 +561,36 @@ footer {
 /* footer-responsive */
 @media screen and (max-width: 431px) {
   footer {
-  display: flex;
-  flex-direction:column;
-  padding: 20px;
-  gap: 30px;
-  margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    margin: 50px 20px;
   }
   .logo {
     font-size: 22px;
     font-weight: 400;
-    text-align:left;
+    text-align: left;
     width: 180px;
     height: 109px;
     margin: 16px 0px;
   }
   .logo p {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  font-weight: 400;
-  text-align:left;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .lists ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .icons {
+    display: flex;
+    justify-content: left;
+    align-items: l;
+    text-align: left;
+    gap: 15px;
+  }
 }
-.lists ul{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
- 
-}
-.icons {
-  display: flex;
-justify-content:left;
-align-items:l;
-text-align:left;
-  gap: 15px;
-}
-} 
