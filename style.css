@@ -1,7 +1,20 @@
+
+
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 body {
   margin: 0 auto;
   padding: 0;
   max-width: 1180px;
+
 }
 /* nav style */
 .navbar {
@@ -85,6 +98,9 @@ body {
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
 }
 .card-container h4 {
   font-size: 22px;
@@ -434,12 +450,10 @@ footer {
 
   .card {
     width: 100%;
-    /* display: block; */
-    /* max-width: 270px; */
+
     text-align: center;
     box-sizing: border-box;
     margin-right: 10px;
-    /* flex: 1; */
   }
   .card-container button {
     width: 90%;
