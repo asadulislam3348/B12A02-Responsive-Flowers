@@ -457,6 +457,7 @@ footer {
   .card-container button {
     width: 100%;
     height: 50px;
+    text-align: center;
   }
 }
 
